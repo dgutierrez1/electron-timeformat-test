@@ -10,6 +10,28 @@
     We are using Node.js <script>document.write(process.versions.node)</script>,
     Chromium <script>document.write(process.versions.chrome)</script>,
     and Electron <script>document.write(process.versions.electron)</script>.
+    <p style="width: 300px; white-space:normal;">
+      OS user inf <script>document.write(JSON.stringify( require('os').userInfo()))</script>.
+    </p>
+    <p>
+      INFO
+    <script>
+      const si = require('systeminformation');
+      // si.time(function(data) {
+      //   console.log('CPU-Information:');
+      //   document.write(JSON.stringify( data)) 
+      // });
+      var dateFormat = require('dateformat');
+      var now = new Date();
+
+      
+      document.write(now.toLocaleDateString());
+      document.write(' '+now.toLocaleTimeString());
+
+    </script>
+    </p>
+
+
 
     <script>
       // You can also require other files to run in this process
